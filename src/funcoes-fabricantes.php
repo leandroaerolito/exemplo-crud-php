@@ -28,6 +28,3 @@ function lerFabricantes( PDO $conexao ){
     return $resultado;
 }
 
-// Teste
-$dados = lerFabricantes($conexao);
-var_dump($dados);
