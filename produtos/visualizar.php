@@ -66,6 +66,15 @@ $listaDeProdutos = lerProdutos($conexao);
             resultado dela já calculado e formatado -->
             <p><b>Total:</b> 
             <?=calcularTotal($produto["preco"], $produto["quantidade"])?></p>
+
+            <hr>
+            <p>
+                <a href="atualizar.php?id=<?=$produto["id"]?>">Editar</a>  
+                <br>
+                <a href="">Excluir</a>
+            </p>
+
+            
         </article>
     <?php } ?>
 

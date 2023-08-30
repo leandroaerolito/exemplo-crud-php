@@ -62,3 +62,18 @@ function inserirProduto(
     }
 }
 
+function lerUmProduto(PDO $conexao, int $idProduto):array {
+    $sql = "SELECT * FROM produtos WHERE id = :id";
+
+    try {
+        $consulta = $conexao->prepare($sql);
+        $consulta->bindValue(":id", $idProduto, PDO::PARAM_INT);
+        $consulta->execute();
+        $resultado = $consulta->fetch(PDO::FETCH_ASSOC);
+    } catch(Exception $erro){
+        die("Erro ao carregar:".$erro->getMessage());
+    }
+
+    return $resultado;
+    
+}
