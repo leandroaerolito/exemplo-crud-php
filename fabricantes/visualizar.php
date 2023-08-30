@@ -23,30 +23,6 @@ $quantidade = count($listaDeFabricantes);
     <hr>
     <h2>Lendo e carregando todos os fabricantes.</h2>
 
-     <table>
-        <caption>Lista de Fabricantes</caption>   
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nome</th>
-                <th>Operações</th>
-            </tr>
-        </thead>
-        <tbody>
-        
-        <?php foreach($listaDeFabricantes as $fabricante) { ?>
-            <tr>
-                <td> <?=$fabricante["id"]?>  </td>
-                <td> <?=$fabricante["nome_do_fabricante"]?>  </td>
-                <td> 
-                    <a href="">Editar</a>
-                    <a href="">Excluir</a>
-                </td>
-            </tr>
-<?php } ?>
-        </tbody> 
-    
-    </table>
 
 
     <p><a href="inserir.php">

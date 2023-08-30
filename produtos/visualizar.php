@@ -18,17 +18,18 @@ $listaDeProdutos = lerProdutos($conexao);
             font-family: 'Segoe UI';
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
-            width: 80%;
+            gap: 20px;
+            width: 65%;
             margin: auto;
         }
 
         .produto {
             background-color: #FFF5EE;
-            padding: 1rem;
+            padding: 1.2rem;
             width: 49%;
             box-shadow: rgba(0,0,0,0.3) 0 0 3px 1px;
         }
+
     </style>
 
 </head>
