@@ -79,6 +79,12 @@ function lerUmProduto(PDO $conexao, int $idProduto):array {
 }
 
 function atualizarProduto(
-    $conexao, $id, $nome, $preco, $quantidade, $descricao, $fabricanteId) {
-        
+    PDO $conexao, 
+    int $id, 
+    string $nome, 
+    float $preco, 
+    int $quantidade, 
+    string $descricao, 
+    int $fabricanteId):void {
+
     }
