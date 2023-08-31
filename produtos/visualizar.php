@@ -15,12 +15,13 @@ $listaDeProdutos = lerProdutos($conexao);
         * { box-sizing: border-box; }
 
         .produtos {
-            font-family: 'Segoe UI';
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
             width: 65%;
             margin: auto;
+            
         }
 
         .produto {
@@ -29,6 +30,17 @@ $listaDeProdutos = lerProdutos($conexao);
             width: 49%;
             box-shadow: rgba(0,0,0,0.3) 0 0 3px 1px;
         }
+
+        h3 {
+            color:chocolate;
+            font-size: 30px
+
+        }
+
+        h4 {
+            color: darkcyan;
+            font-size: 20px;
+           }
 
     </style>
 
